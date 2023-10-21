@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(6, 124, 85);
+}
+
+.wrapper{
+    display: flex;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.quiz-container{
+    background-color: rgb(194, 250, 231);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.quiz-head{
+    background-color: rgb(252, 239, 221);
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px rgb(75, 198, 247);
+}
+
+.quiz-title{
+    background-color: azure;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(3, 108, 134);
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.quiz-score{
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(247, 247, 152);
+}
+
+.quiz-body{
+    background-color: rgb(144, 155, 255);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.quiz-question{
+    padding: 5px 15px 5px 15px;
+    background-color: rgb(255, 255, 254);
+    border-radius: 5px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.quiz-options{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.quiz-options li{
+    margin: 10px 20px 10px 20px;
+    padding: 15px 0px 15px 0px;
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px
+}
+
+.quiz-options li:hover{
+    background-color: rgb(116, 243, 84);
+}
+
+.quiz-options li:active{
+    transform: scale(0.97);
+}
+
+.selected{
+    background-color: rgb(116, 243, 84)!important;
+}
+
+.category{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-weight: light;
+}
+
+.quiz-foot{
+    text-align: center;
+    background-color: rgb(144, 124, 255);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px rgb(75, 198, 247);
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz-foot button{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+}
+
+#check-answer{
+    background-color: rgb(71, 223, 250);
+}
+
+#result{
+    text-align: center;
+    background-color: rgb(238, 250, 172);
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+    color: black;
+}
+
+#play-again{
+    background-color: rgb(226, 247, 108);
+    font-style: italic;
+    display: none;
+}
+
+#check-answer:hover{
+    background-color: rgb(71, 250, 116);
+}
+
+#play-again:hover{
+    background-color: rgb(71, 223, 250);
+}
+
+@media only screen and (max-width: 800px) {
+    .quiz-question{
+        font-size: 18px;
+    }
+
+    .quiz-title{
+        font-size: 22px;
+    }
+
+    .category{
+        font-size: 16px;
+    }
+
+    .quiz-score{
+        font-size: 16px;
+    }
+  }

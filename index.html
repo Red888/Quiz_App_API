@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ APP With API</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="quiz-container">
+            <div class="quiz-head">
+                <h1 class="quiz-title">Quiz Game</h1>
+                <div class="quiz-score flex">
+                    <span id="correct-score"></span>/<span id="total-question"></span>
+                </div>
+            </div>
+
+            <div class="quiz-body">
+                <div>
+                    <h3 class="quiz-question" id="question">What is the full form of HTTP</h2>
+                    <h3 id="category"></h3>
+                </div>
+                <ul class="quiz-options">
+                    <li class="selected">1. Hyper text transfer package</li>
+                    <li>1. Hyper text transfer package</li>
+                    <li>1. Hyper text transfer package</li>
+                    <li>1. Hyper text transfer package</li>
+                </ul>
+                <div id="result">
+                    <!-- result here -->
+                </div>
+            </div>
+
+            <div class="quiz-foot">
+                <button type="button" id="check-answer">Check Answer</button>
+                <button type="button" id="play-again">Play Again!</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
